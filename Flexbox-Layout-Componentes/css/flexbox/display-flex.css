@@ -1,0 +1,9 @@
+/* A nuestro flex container le daremos el contexto flex */
+.displayFlex {
+    display: flex;
+}
+
+/* Una caja que esté al lado de otra, que este en nuestro displayFlex, caja va a tomar estos atributos */
+.displayFlex .box + .box {
+    margin-inline-start: 1rem;
+}
