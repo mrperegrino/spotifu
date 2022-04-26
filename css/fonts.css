@@ -1,0 +1,15 @@
+/* Cargar una fuente que está dentro del proyecto */
+@font-face {
+    font-family: Avenir;
+    src: url('../fonts/AvenirLTStd-Black.otf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: Avenir;
+    src: url('../fonts/AvenirLTStd-Roman.otf');
+    font-weight: normal;
+    font-style: normal;
+}

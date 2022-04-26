@@ -1,0 +1,48 @@
+.justifyContent {
+    display: flex;
+    justify-content: space-evenly;
+    /* cuando estamos el fila justify content alinia en horizontal (eje principal y align items en vertical
+    (eje transversal) y cuando estamos en flex direction column es al reves */
+    /* justify-content: flex-end; */
+    flex-wrap: wrap;
+    border: 1px solid red;
+    gap: 2rem;
+    /* flex-direction: column;  */
+    /* block-size: 1000px; */
+    /* align-items: flex-start; */
+}
+
+.spaceBetween {
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.spaceBetween ul{
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    align-items: center;
+}
+
+.spaceBetween img{
+    height: 100px;
+    border-radius: 50%;
+}
+
+
+
+/* .justifyContent img:nth-of-type(1) { */
+    /* alineado especial dentro de un hijo flexible */
+    /* align-self: flex-end; */
+/* } */
+
+/* .justifyContent img:nth-of-type(1) {
+    align-self: center;
+} */
+
+/* .justifyContent img {
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+} */

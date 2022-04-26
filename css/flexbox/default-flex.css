@@ -1,0 +1,46 @@
+/* importar otra hoja de estilos dentro de esta carpeta */
+@import './display-flex.css';
+@import './flex-order.css';
+@import './flex-direction.css';
+@import './flex-wrap.css';
+@import './flex.css';
+@import './justify-content.css';
+@import './align-items.css';
+
+/* Declaración de nuestras variables en todo el archivo */
+:root {
+    --darkColor: #04001e;
+    --lightColor: #DFFBFF;
+    --primaryColor:#DB086F;
+}
+
+a {
+    color: var(--lightColor);
+}
+
+/* Color de fondo y de letra, y tipografía */
+body {
+    background: var(--darkColor);
+    color: var(--lightColor);
+    font-family: system-ui;
+}
+
+/* El máximo de ancho del contenedor de todo el contenido de nuestra página, además de 
+centrarlo en el espacio horizontal en este caso */
+.wrapper {
+    max-inline-size: 64rem;
+    margin: auto;
+}
+
+/* Dando padding al contenido junto con su padding y declaración del nombre del contador
+para usarlo luego en la pseudoclase after de box */
+.box {
+    border: 5px dashed var(--primaryColor);
+    padding: 1rem;
+    counter-increment: flex-items;
+}
+
+/* Darle el contador declarado en box */
+.box::after {
+    content: counter(flex-items);
+}

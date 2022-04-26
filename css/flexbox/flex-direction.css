@@ -1,0 +1,8 @@
+/* La dirección de los elementos se puso en modo chat y solo hace scroll si los elementos desbordan 
+el tamaño del alto */
+.flexDirection {
+    display: flex;
+    flex-direction: column-reverse;
+    max-block-size: 200px;
+    overflow: auto;
+}
