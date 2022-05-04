@@ -1,0 +1,18 @@
+.playerPlayback {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.playerPlayback-slider {
+    /* Ocupar todo el contenido disponible menos el de sus hermanos flexitems */
+    flex: 1;
+}
+
+.playerPlayback-progressTime {
+    font: var(--small);
+    line-height: 1;
+    /* Para hacerlo bien alineado */
+    position: relative;
+    top: 1px;
+}

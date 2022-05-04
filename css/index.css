@@ -5,6 +5,10 @@
 @import './button-icon.css';
 @import './sidebar.css';
 @import './ellipsis.css';
+@import './player.css';
+@import './page.css';
+@import './layout.css';
+@import './scrollbar.css';
 
 
 /* Documentación de paleta de colores y fuente principal y alternativas*/
@@ -27,4 +31,10 @@
     --button: bold 0.875rem/1rem var(--baseFontFamily);
     /* em se deja en small para que esto sea relativo al padre directo no al css global como en los rem */
     --small: normal 0.75em/normal var(--baseFontFamily);
+}
+
+@media screen and (min-width: 1367px){
+    :root {
+        font: 18px;
+    }
 }

@@ -1,0 +1,31 @@
+.nowPlaying {
+    display: flex;
+    gap: .5rem;
+}
+
+.nowPlaying-cover img {
+    inline-size: 3.5rem;
+    block-size: 3.5rem;
+    /* Ya que las imagenes dentro de un div toman un margen de texto en la parte inferior
+    modificar la siguiente propiedad */
+    vertical-align: middle;
+}
+
+.nowPlaying-details {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.nowPlaying-title {
+    display: block;
+    color: var(--white);
+    font: var(--baseFontBold);
+    text-decoration: none;
+}
+
+.nowPlaying-artist {
+    color: var(--gray10);
+    font: var(--small);
+    text-decoration: none;
+}
